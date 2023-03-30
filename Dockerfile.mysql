@@ -1,0 +1,9 @@
+FROM mysql/mysql-server
+
+ENV MYSQL_DATABASE=wgdb \
+    MYSQL_ROOT_PASSWORD=wgforge \
+    MYSQL_ROOT_HOST=%
+
+ADD schema.sql /docker-entrypoint-initdb.d/
+
+EXPOSE 3306

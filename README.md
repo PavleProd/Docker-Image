@@ -1,5 +1,5 @@
 # Docker Image
- Docker image for Python web server and MySQL database
+ Docker image for Python web server and MySQL database.
 
 Starting image(you need to have docker desktop app):
 docker compese up --build
